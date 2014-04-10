@@ -1,0 +1,6 @@
+name = OU DF Module
+description = OU DF Module
+core = 7.x
+package = OU
+
+

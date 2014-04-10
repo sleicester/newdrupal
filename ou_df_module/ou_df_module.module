@@ -1,0 +1,158 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: stevecoppin
+ * Date: 14/03/2014
+ * Time: 12:26
+ */
+/**
+ * Implements hook_block_info().
+ */
+function ou_df_module_block_info()
+{
+  $blocks = array();
+  $blocks['logo'] = array(
+    'info' => t('Logo'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function ou_df_module_block_view($delta = '')
+{
+  $block = array();
+
+  switch ($delta) {
+    case 'logo' :
+      $block['content'] = ou_df_module_logo_block_view();
+      break;
+  }
+
+  return $block;
+}
+
+function ou_df_module_logo_block_view() {
+
+  $image = array(
+    'path' => theme_get_setting('logo'),
+    'alt' => 'my logo',
+  );
+
+  $block = array(
+    'image' => array(
+      '#prefix' => '<div class="int-container"><div class="ou-logo"><a href="' . check_plain(url('<front>')) . '">',
+      '#type' => 'markup',
+      '#markup' => theme('image', $image),
+      '#suffix' => '</a></div></div>',
+    ),
+  );
+
+  return $block;
+}
+
+//function ou_df_module_ds_layout_info_alter(&$layouts)
+//{
+//  foreach ($layouts as $key => $layout) {
+//    if (!preg_match('/^ou_/', $key)) {
+//      unset($layouts[$key]);
+//    }
+//  }
+//}
+
+
+/**
+ * Implementation of hook_ctools_plugin_directory().
+ */
+function ou_df_module_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'page_manager' || $module == 'panels') {
+    return 'plugins/' . $plugin;
+  }
+}
+
+function ou_df_module_entity_info_alter(&$entity_info) {
+  $entity_info['fieldable_panels_pane']['bundles']['text_and_image'] = array(
+    'label' => t('Text and image'),
+    'pane category' => t('OU panels'),
+    'pane top level' => FALSE, // set to true to make this show as a top level icon
+//    'pane icon' => '/path/to/custom/icon/for/this/pane.png',
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+      'bundle argument' => 4,
+      // Note that this has all _ replaced with - from the bundle name.
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/text-and-image',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+  $entity_info['fieldable_panels_pane']['bundles']['text_and_media'] = array(
+    'label' => t('Text and media'),
+    'pane category' => t('OU panels'),
+    'pane top level' => FALSE, // set to true to make this show as a top level icon
+//    'pane icon' => '/path/to/custom/icon/for/this/pane.png',
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+      'bundle argument' => 4,
+      // Note that this has all _ replaced with - from the bundle name.
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/text-and-media',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+  $entity_info['fieldable_panels_pane']['bundles']['text'] = array(
+    'label' => t('Text'),
+    'pane category' => t('OU panels'),
+    'pane top level' => FALSE, // set to true to make this show as a top level icon
+//    'pane icon' => '/path/to/custom/icon/for/this/pane.png',
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+      'bundle argument' => 4,
+      // Note that this has all _ replaced with - from the bundle name.
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/text',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+  $entity_info['fieldable_panels_pane']['bundles']['content_list'] = array(
+    'label' => t('Content list'),
+    'pane category' => t('OU panels'),
+    'pane top level' => FALSE, // set to true to make this show as a top level icon
+//    'pane icon' => '/path/to/custom/icon/for/this/pane.png',
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+      'bundle argument' => 4,
+      // Note that this has all _ replaced with - from the bundle name.
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/content-list',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu_block_blocks().
+ */
+function ou_df_module_menu_block_blocks() {
+  return array(
+    'ou-df-main-menu' => array(
+      'admin_title' => 'OU Main menu',
+      'menu_name' => 'main-menu',
+      'parent_mlid' => '0',
+      'title_link' => 0,
+      'level' => '1',
+      'follow' => 0,
+      'depth' => '3',
+      'expanded' => 1,
+      'sort' => 0,
+    ),
+    'ou-df-panel-sub-menu' => array(
+      'admin_title' => 'Child menu entries',
+      'menu_name' => MENU_TREE__CURRENT_PAGE_MENU,
+      'parent_mlid' => '0',
+      'title_link' => 0,
+      'level' => '2',
+      'follow' => 'child',
+      'depth' => '1',
+      'expanded' => 1,
+      'sort' => 0,
+    ),
+  );
+}

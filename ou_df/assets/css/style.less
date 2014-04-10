@@ -1,0 +1,60 @@
+// Missing styles might be found here:
+//@import "http://ou.jywng.co/styleguide/assets/css/screen.css";
+@import "../../Jwing/assets/css/screen";
+@import "includes/_menus";
+@import "includes/_utils";
+@import "includes/_drupal-fixes";
+
+@fa-font-path: "../../Jwing/assets/fonts/fontawesome/fonts";
+
+@img-path: '../../Jwing/assets/img';
+
+// TODO Keep this file organised by splitting it up into sub folders.
+
+// Style all forms as interactions with a container, as per the style guide.
+form {
+  .interaction();
+  > div {
+    .int-container();
+  }
+}
+
+// Jaywing bug fix.
+img {
+  height: auto;
+}
+
+// ??
+.generatedcontent ul.tabs li:before {
+    content: none;
+}
+
+.generatedcontent ul.tabs li {
+    padding-left: 0px;
+}
+
+ul.panels-ipe-linkbar li:before {
+    content: none;
+}
+
+div.panel-separator {
+    display:none;
+}
+
+div.panels-flexible-region {
+    width:100%;
+}
+
+iframe {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+div.oembed a.oembed-title {
+    display: none;
+}
+
+div.oembed {
+    display: block;
+    float: none;
+}

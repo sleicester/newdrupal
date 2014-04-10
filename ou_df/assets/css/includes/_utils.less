@@ -1,0 +1,56 @@
+.no-transition() {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.muted-form() {
+
+  // Reverse styling of interactions. Might be possible to tidy this up a bit?
+  background-color: transparent;
+  color:@text-color;
+  p, ul, ol, dl, dd, label, h1, h2, h3, h4, h5, h6 {
+    color: @text-color;
+  }
+  a {
+    color: @link-color;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    a:hover, a:focus {
+      color:@link-color;
+    }
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="search"],
+  input[type="url"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    .transition();
+    border-color: @light-grey-blue;
+    border-width: 2px;
+
+    &.is-error {
+      border-color: @error-color;
+    }
+    &:focus {
+      outline:0;
+      border-color: @gold;
+    }
+    &:disabled {
+      color: @input-placeholder-color;
+    }
+  }
+
+  .generatedcontent & {
+    input[type=checkbox], input[type=radio] {
+      margin-top: 0;
+    }
+    input[type="checkbox"]+label:before, input[type="radio"]+label:before{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+name = 'OUDFv0.x D7 v0.0.1 - (The Open University)'
+description = 'Open University Digital Framework v0.x D7'
+package = OU
+version = '0.0.1'
+core = '7.x'
+
+stylesheets[screen][] = assets/css/style.css
+#scripts[] = scripts/ou_df-theme.js
+regions[bar] = 'Bar'
+regions[header] = 'Header'
+regions[content] = 'Content'
+regions[footer] = 'Footer'

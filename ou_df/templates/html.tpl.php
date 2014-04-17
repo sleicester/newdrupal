@@ -36,19 +36,29 @@
 
     <?php print $scripts; ?>
 
+
+    <!-- LEE ADDED -->
+    <link rel="stylesheet" href="/oudigital/headerandfooter/assets/css/headerandfooter.css">
+    <link rel="stylesheet" href="/oudigital/headerandfooter/assets/css/ou-df-header.css">
+
   </head>
-  <body marginwidth="0" marginheight="0" style="">
+  <body marginwidth="0" marginheight="0" style="" class="no-nation english">
 
     <div id="int-site">
-      <a href="#int-content" id="int-skip-link" class="btn-skip">
-        <i class="int-icon int-icon-chevron-down"></i>
-        <span> Skip to content</span>
-      </a>
+        <!-- LEE ADDED -->
+      <?php include theme_get_setting('ou_df_path_to_header'); ?>
+    <script>
+      doTranslation();
+    </script>
+    <!-- END LEE ADDED -->
       <?php print $page_top; ?>
       <?php print $page; ?>
       <?php print $page_bottom; ?>
     </div>
 
+    <!-- LEE ADDED -->
+    <?php include theme_get_setting('ou_df_path_to_footer') ; ?>
+    <!-- END LEE ADDED -->
     <input type="hidden" id="loaded-components" value="Can I do it">
 
     <!--[if lt IE 9]>
@@ -72,6 +82,29 @@
     <script src="<?php print check_plain(file_create_url(path_to_theme() . '/Jwing/assets/js/modules/modal.js')); ?>"></script>
 
     <script src="<?php print check_plain(file_create_url(path_to_theme() . '/Jwing/assets/js/styleguide.js')); ?>"></script>
+
+
+    <!-- LEE ADDED -->
+    <script src="/oudigital/eep/assets/js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="/oudigital/eep/assets/js/vendor/jquery.placeholder.js"></script>
+    <script src="/oudigital/eep/assets/js/vendor/jquery.smartresize.js"></script>
+    <script>
+    // Only hide if your CMS menu has been output correctly
+    $("#ou-global-primary-navigation.ou-df-header-nav").remove();
+    </script>
+    <script src="/oudigital/headerandfooter/assets/js/modules/ou-primary-navigation.js"></script>
+    <script>
+      //Function that has to be called on the page to initialise the nav
+      (function ($, window) {
+
+          window.OU.PrimaryNavigation = new window.OU.DigitalFramework.Global.PrimaryNavigation({
+              serviceLink: true,    //Set to false to switch off the service links toggle functionality and responsive styling i.e. if you are not using service links on the page. Default is true.
+              activeItem: true      //Set to true to initialise the nav item using js, default is false
+          });
+
+      })(jQuery, window);
+    </script
+    <script type="text/javascript">if (typeof window.ou_init=='function')ou_init();</script>
 
   </body>
 </html>

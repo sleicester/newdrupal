@@ -1,0 +1,73 @@
+// =============================================================================
+// Buttons
+// 
+// =============================================================================
+
+@button-font-family: 		@secondary-font-family;
+@button-bg: 				@gold;
+@button-color: 				@mid-blue;
+@button-hover-bg: 			@purple;
+@button-hover-color: 		@gold;
+@button-active-bg: 			@dark-purple;
+
+@button-top-bg: 			@light-blue;
+@button-top-color: 			@mid-blue;
+@button-top-hover-bg: 	    @dark-blue;
+@button-top-hover-color:    @white;
+
+@button-disabled-bg:        @light-blue;
+
+
+button, input[type=button], input[type=submit], .int-button, a.int-button {
+	.rounded(4px);
+	//.box-shadow(0 3px 0px rgba(0,0,0,0.25));
+	.transition();
+	font-family: @button-font-family;
+	font-size: @lrg-text-size;
+	background:  @button-bg;
+	color: @button-color;
+	font-weight:normal;
+	text-decoration: none;
+	padding: 0.6em 0.8em;
+	display:inline-block;
+	margin-bottom:0.875em;
+	border:0;
+	&:hover, &:focus {
+		background: @button-hover-bg;
+		color: @button-hover-color;
+		text-decoration: none;
+	}
+	&:active {
+		background: @button-active-bg;
+		color: @button-hover-color;
+	}
+}
+
+.int-button-disabled, .int-button-disabled:hover, .int-button-disabled:focus  {
+    background: @button-disabled-bg;
+    opacity:0.5;
+    color: @button-color;
+    cursor:default;
+    outline:0;
+}
+
+.btn-top {
+	clear: both;
+	text-align:right;
+	a {
+		.transition();
+		display:inline-block;
+		margin:0 auto;
+		font-size: @sml-text-size;
+		font-weight: 300;
+		color: @button-top-color;
+		background: @button-top-bg;
+		padding: 0.8em;
+		text-decoration: none;
+		&:hover, &:focus {
+			background: @button-top-hover-bg;
+			color: @button-top-hover-color;
+			border-color: @gold;
+		}
+	}
+}

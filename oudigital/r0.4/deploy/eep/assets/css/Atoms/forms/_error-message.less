@@ -1,0 +1,28 @@
+// =============================================================================
+// Error message
+// 
+// =============================================================================
+
+.int-error-msg {
+    .rounded(4px);
+    position: relative;
+    display:inline-block;
+    border: 2px solid @red;
+    padding:0.75em 2.8em 0.5em;
+    margin-bottom: 1.25em;
+    background:@white;
+    font-size: @sml-text-size;
+    p, ul, a { color: @red; }
+    .int-icon {
+        color:@red;
+        position:absolute;
+        top:0.2em;
+        left:0.2em;
+    }
+}
+
+.generatedcontent .int-error-msg ul li:before {
+    color: @red;
+}
+
+.generatedcontent ul .int-error-msg ul { margin-bottom: 1em; }

@@ -1,0 +1,41 @@
+// =============================================================================
+// Checkboxes
+// 
+// =============================================================================
+
+input[type=checkbox], input[type=radio] {
+	float:left;
+	margin:0.45em 0.875em 0 0;
+}
+
+.generatedcontent input[type="checkbox"]+label, .generatedcontent input[type="radio"]+label {
+	padding-top:8px;
+}
+
+.generatedcontent input[type="checkbox"]+label:before,  .generatedcontent input[type="radio"]+label:before{
+  content:"";
+  display:inline-block;
+  height:32px;
+  margin:-2px 8px 0 -32px;
+  vertical-align:middle;
+  width:32px;
+  background:url(../img/form-sprites.png) no-repeat;
+}
+
+.generatedcontent input[type="checkbox"]:focus+label:before, .generatedcontent input[type="radio"]:focus+label:before {
+	outline:1px dotted yellow;
+}
+
+.generatedcontent input[type="checkbox"]+label:before{
+	background-position: 0 -250px;
+}
+.generatedcontent input[type="checkbox"]:checked+label:before{
+	background-position: 0 -300px;
+}
+
+.generatedcontent input[type="radio"]+label:before{
+	background-position: 0 -150px;
+}
+.generatedcontent input[type="radio"]:checked+label:before{
+	background-position: 0 -200px;
+}

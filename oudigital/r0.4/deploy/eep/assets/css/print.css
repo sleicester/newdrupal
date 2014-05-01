@@ -1,0 +1,5 @@
+#int-ouHeader, nav, .footer, .int-ouFooter, .video-wrapper, .country-changer, .int-search-box, .btn-top, .breadcrumb, dl.int-tags{display:none;}
+a:link:after { content: " (" attr(href) ") ";
+word-wrap: break-word;
+  font-weight:bold;
+}

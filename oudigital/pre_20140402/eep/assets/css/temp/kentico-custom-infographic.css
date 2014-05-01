@@ -1,0 +1,21 @@
+.int-modal-window .ui-tabs .ui-tabs-nav
+{
+	border: 0;
+	height: auto;
+}
+.int-modal-window .ui-tabs .ui-tabs-nav li
+{
+	float: none;
+}
+.int-modal-window .ui-tabs .ui-tabs-nav li a
+{
+	float: none;
+	font-size: inherit;
+	font-weight: inherit;
+}
+.int-modal-window .ui-state-default, .int-modal-window .ui-state-active
+{
+	background: none;
+	border: 0 !important;
+}
+ 

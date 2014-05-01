@@ -1,0 +1,16 @@
+@font-face{
+font-family:"Futura BT W01 Heavy";
+src:url("Fonts/0084b2cc-4014-4723-9304-027c2d0086cd.eot?#iefix");
+src:url("Fonts/0084b2cc-4014-4723-9304-027c2d0086cd.eot?#iefix") format("eot"),
+url("Fonts/4603b58c-e92d-40e1-a670-1063cdca453b.woff") format("woff"),
+url("Fonts/67b08d64-f836-4b99-ac05-4b1c2e05a949.ttf") format("truetype"),
+url("Fonts/a5f12249-079e-42a0-95bc-27ad0164deb9.svg#a5f12249-079e-42a0-95bc-27ad0164deb9") format("svg");
+}
+@font-face{
+font-family:"Futura BT W01 Book";
+src:url("Fonts/17fe4ab4-6e45-4ea2-bb53-2123063911c3.eot?#iefix");
+src:url("Fonts/17fe4ab4-6e45-4ea2-bb53-2123063911c3.eot?#iefix") format("eot"),
+url("Fonts/142b09e6-c245-4ff7-b01c-325fa824c99e.woff") format("woff"),
+url("Fonts/e4509cd4-7aa0-4068-89bd-95ffd0bfb6d4.ttf") format("truetype"),
+url("Fonts/d37fcd2f-d43f-4eae-b192-c48028c02797.svg#d37fcd2f-d43f-4eae-b192-c48028c02797") format("svg");
+}

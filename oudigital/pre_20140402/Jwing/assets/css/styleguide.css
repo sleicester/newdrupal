@@ -1,0 +1,67 @@
+.font-header {
+	font-family: "CaratReg", "Book Antiqua", Georgia, serif;
+}
+.font-secondary {
+	font-family: "CaratLight", "Book Antiqua", Georgia, serif;	
+}
+
+.cl-colours {
+	overflow:hidden;
+	list-style:none;
+	margin:0;
+	padding:0 0 0 0.25em;
+}
+
+.cl-colours li {
+	display:inline-block;
+	width:12em;
+	border:1px solid rgba(0,0,0,.3);
+	margin:0.25em;
+	padding-left:0;
+}
+
+ul.cl-colours li:before {
+	content:'';
+	display:none;
+	left:-9999px;
+	top:-9999px;
+}
+
+.cl-swatch {
+	border:1px solid rgba(0,0,0,.1);
+	display:block;
+	margin:0.25em;
+	height:4em;
+}
+
+.cl-info {
+	margin:0.25em;
+	padding:0;
+	overflow:hidden;
+	font-size:0.75em;
+}
+.cl-info dt {
+	font-weight:bold;
+	float:left;
+}
+.cl-info dd {
+	margin:0;
+	float:right;
+}
+
+[class*="sg-grid"] {
+	text-align:center;
+	background:#999;
+	padding-top:5em;
+	padding-bottom:5em;
+	font-weight:bold;
+	margin-bottom:2px;
+}
+
+[class*="sg-grid"]:nth-child(odd) {
+	background:#777;
+}
+
+.nav-footer {
+	background:#002158;
+}

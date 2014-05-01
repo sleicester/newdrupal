@@ -1,0 +1,28 @@
+.generatedcontent ul.ui-autocomplete li:before
+{
+	content: "";
+}
+.ui-autocomplete
+{
+	background: #fff;
+	border: 1px solid #0b55a8;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.ui-autocomplete.ui-menu .ui-menu-item a
+{
+	padding: .5em 1.85em;
+	line-height: 1.4;
+	font-size: 1.25em;
+}
+.ui-autocomplete .ui-menu-item a.ui-state-focus
+{
+	border: 0;
+	background: #2892fb;
+	color: #fff;
+}

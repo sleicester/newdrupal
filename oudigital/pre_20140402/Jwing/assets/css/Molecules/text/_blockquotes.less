@@ -1,0 +1,20 @@
+// =============================================================================
+// Blockquotes
+// 
+// =============================================================================
+
+@quote-intro-color: @mid-blue;
+
+blockquote.int-quote-intro {
+    margin:0;
+    padding: 1.75em 0em 1.5em;
+    
+    &:before {
+        left:0; 
+    }
+    p {
+        font-family: @secondary-font-family;
+        color: @quote-intro-color;
+        font-size:@h3-font-size;
+    }
+}

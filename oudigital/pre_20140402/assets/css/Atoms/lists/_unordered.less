@@ -1,0 +1,61 @@
+// =============================================================================
+// Unordered list
+// 
+// =============================================================================
+
+@bullet-point-color: 	@mid-blue;
+@list-border-color: 	@light-blue;
+@list-striped-bg: 		@light-grey-blue;
+@list-item-v-spacing: 	0.25em;
+
+ul {
+	list-style-type:none;
+	padding:0;
+	li{
+		position:relative;
+		padding-left:0.875em;
+		&:first-child {margin-top: 0;}
+		&:before {
+			content: "\2022";
+			padding-right:0.5em;
+			color: @bullet-point-color;
+			font-size:1.4em;
+			position:absolute;
+			left:0;
+			top:0;
+			line-height:0.8;
+		}
+	}
+	ul, ol {
+		margin:0;
+	}
+}
+
+.int-striped-list {
+	border-top: 1px solid @list-border-color;
+	li {
+		padding: 0.875em 1em 0.75em 1em;
+		margin-top: 0;
+		border-bottom: 1px solid @list-border-color;
+		&:before {
+			content:'';
+			display:none;
+		}
+		&:nth-child(even) {
+			background: @list-striped-bg;
+		}
+	}
+}
+
+main {
+    ul {
+        li {
+            margin-top: @list-item-v-spacing;
+            ol, ul {
+                li:first-child {
+                    margin-top: @list-item-v-spacing;
+                }
+            }
+        }
+    }
+}

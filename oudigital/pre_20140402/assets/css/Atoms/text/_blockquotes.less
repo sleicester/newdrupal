@@ -1,0 +1,38 @@
+// =============================================================================
+// Blockquotes
+// 
+// =============================================================================
+
+@quotation-font-family: @tertiary-font-family;
+
+// Blockquote
+blockquote {
+	padding: 3em 0 1.5em;
+	position: relative;
+	p {
+		font-family: @quotation-font-family;
+		font-size: @lrg-text-size;
+	}
+	&:before, &:after {
+		content:'';
+		display:block;
+		position:absolute;
+		width:30px;
+		height:30px;
+		background:url(../img/blockquote.png);
+	}
+	&:before {
+		top:0;
+	}
+	&:after {
+		bottom:0;
+		right:0;
+		background-position:bottom left;
+	}
+}
+
+// citation
+cite {
+	font-size: @sml-text-size;
+	font-style:normal;
+}

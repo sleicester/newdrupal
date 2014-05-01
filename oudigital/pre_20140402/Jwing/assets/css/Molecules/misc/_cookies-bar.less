@@ -1,0 +1,27 @@
+// =============================================================================
+// Cookies bar
+// 
+// =============================================================================
+
+.int-cookies-bar {
+    .transition(0.5s);
+    overflow:hidden;
+    max-height:0px;
+    height:0;
+    &.int-active {
+        max-height:16em;  
+        height:auto;
+    }
+    .int-button {
+        float:right;
+    }
+    p {
+        font-size: @sml-text-size;
+    }
+    @media (max-width: @screen-xs-max) {
+        p { 
+            padding-right: 45px;
+        }
+        .int-button { font-size: @sml-text-size; }
+    }
+}

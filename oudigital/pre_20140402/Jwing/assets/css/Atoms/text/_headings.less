@@ -1,0 +1,54 @@
+// =============================================================================
+// Headings
+// 
+// =============================================================================
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @secondary-font-family;
+	font-weight: normal;
+	color: @mid-blue;
+	margin-top:0.67em;
+	a {
+		color: @mid-blue;
+		font-weight:normal;
+		text-decoration: underline;
+		&:hover, &:focus {
+			color: @dark-blue;
+		}
+	}
+	&.subheading {
+		font-family: @base-font-family;
+		color: @black;
+		text-transform: uppercase;
+		font-weight:600;
+		a {
+			color: @purple;
+			text-decoration:none;
+			font-weight:600;
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+h1, h2 {
+	margin-bottom:0.67em;
+}
+h3, h4 { 
+	margin-bottom: 0.5em; 
+}
+h5, h6 { 
+	margin-bottom:0; 
+}
+
+
+h2, h3, h4, h5 {
+	&.subheading {
+		font-size: 1em;
+	}
+}
+h6.subheading {
+	font-size: @sml-text-size;
+}
+
+

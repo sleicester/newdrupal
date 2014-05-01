@@ -1,0 +1,115 @@
+﻿/*
+css02 - Assistive Menu
+*/
+.widgets-multiselect{
+    position: relative;
+}
+
+.widgets-multiselect-menu{
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+}
+.widgets-multiselect-menu label{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: block;
+}
+.widgets-multiselect-menu li{
+    padding: .2em .6em;
+}
+.widgets-multiselect-menu li:hover{
+    background-color: #F1F1F1;
+}
+
+.widgets-multiselect-menu label > input{
+    margin-right: .3em;
+}
+
+.widgets-multiselect-menu .addon{
+    border-bottom: 1px dotted #ddd;
+}
+
+.widgets-multiselect-menu .filter{
+    margin: .5em 0 .4em 0;
+    box-sizing: border-box;
+}
+.widgets-multiselect-menu .filter-label{
+    margin-right: 0;
+}
+.widgets-multiselect-menu .filter-input{
+    width: 83%!important;
+}
+.widgets-multiselect-menu .filter-button.int-button{
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+/*User Assigned Classes*/
+.int-assist, .int-assistiveContent{
+    background: rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    display: none;
+    position: fixed;
+}
+
+.int-assist, .int-assist a{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.int-assist{
+    width: 15px;
+    height: 15px;
+    cursor: move;
+    z-index: 9999999;
+    padding: 5px;
+}
+.int-assist:hover{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.int-assistiveDot{
+    background-color:white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    display: block;
+}
+.int-assistiveDot:active {
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #E0E0E0;
+}
+
+.int-assistiveContent{
+    width: 200px;
+    z-index: 9999;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.int-assistiveContent * {
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 1);
+}
+
+
+

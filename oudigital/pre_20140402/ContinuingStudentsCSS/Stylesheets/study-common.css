@@ -1,0 +1,225 @@
+﻿body {
+}
+
+/* **************************************************************/
+/* COLOURED BAR used to colour coordinate UNDER/POST grad pages */
+/* **************************************************************/
+p#graduate {padding:0 0.2em; margin:0; font-weight:bold; font-family: "Myriad Pro", Calibri, Tahoma, "Lucida Grande", Arial, Helvetica, sans-serif;font-size:120%;}
+p#graduate {text-decoration:none;background-repeat:no-repeat;padding:0.5em;display:block;margin:0;}
+p#graduate a:hover {background-color:transparent;}
+/********************************* Undergrad versions	********************************************/
+.ug-wrapper p#graduate {border:1px solid #A4A400;background-color:#C8C866;}
+.ug-wrapper p#graduate {background-image:url(/oudigital/continuingstudentscss/images/ug.gif); background-position:8px; padding-left:45px; color:black;}
+/********************************* Postgrad	version ********************************************/
+.pg-wrapper p#graduate {border:1px solid #00274f;background-color:#003366;}
+.pg-wrapper p#graduate {background-image:url(/oudigital/continuingstudentscss/images/pg.gif);background-position:8px;padding-left:45px;color:white;}
+/********************************* CPD versions	********************************************/
+.prof-wrapper p#graduate {border:1px solid #005856;background-color:#a7dfdd;}
+.prof-wrapper p#graduate {background-image:url(/oudigital/continuingstudentscss/images/prof-skills-arrow-blue.gif);background-position:8px;padding-left:45px;color:black;}
+/********************************* Research Degree versions	********************************************/
+.research-wrapper p#graduate {border:1px solid #b8a7ca;background-color:#b8a7ca;margin-bottom:7px;}
+.research-wrapper p#graduate a {background-image:url(/oudigital/continuingstudentscss/images/research-arrow-purple.gif);background-position:8px;padding-left:45px;color:black;}
+
+    
+/* **************************************************************/    
+/* Request print prospectus box */
+/* **************************************************************/
+div#request-print-prospectus img {float: left; margin: 0 10px 10px 0;}
+div#request-print-prospectus {float:left;background: transparent url(/oudigital/continuingstudentscss/images/prospectus-img-large.gif) no-repeat scroll 100% 0%;border: solid 2px #E8E8E8;margin: 1em 0px 0px 0px;padding: 0px 1em 0px 1em;width: 87%;max-height:270px;min-height:140px;display:block;}    
+
+/* **************************************************************/    
+/* Speak to advisor (Student) */
+/* **************************************************************/
+#student-speak-to-advisor {float:left;background: transparent url(/oudigital/continuingstudentscss/images/student_enquiry_banner.gif) no-repeat scroll 100% 0%;border: solid 2px #E8E8E8;margin: 1em 0px 0px 0px;padding: 0px 1em 0px 1em;width: 93%;max-height:300px;min-height:140px;display:block;}
+#student-speak-to-advisor h3 {border:none;padding:5px 0px;color: #C10031;margin: 0px 0px 0.75em 0px;}
+
+#employer-speak-to-advisor {float:left;background: transparent url(/oudigital/continuingstudentscss/images/employer_banner.gif) no-repeat scroll 100% 0%;border: solid 2px #E8E8E8;margin: 1.5em 0px 1.5em 0px;padding: 0px 1em;width: 93%;max-height:270px;min-height:140px;}
+#employer-speak-to-advisor h3 {border:none;padding: 5px 0px;color: #C10031;margin: 0px 0px 0.75em 0px;}
+
+#fees-2012 {float:left;background: transparent url(/oudigital/continuingstudentscss/images/59229_Fees_web_300x140px_notext.jpg)  no-repeat scroll 100% 0%;background-position: bottom right;border: solid 2px #E8E8E8;margin: 1em 0px 0px 0px;padding: 0px 1em 0px 1em;width:88%;max-height:270px;min-height:140px;display:block;}
+#fees-2012 h3 {border:none;padding:5px 0px;color: #C10031;margin: 0px 0px 0.75em 0px;}
+
+/* **************************************************************/
+/* Qual Page - Facts box	*/
+/* **************************************************************/
+    
+div#facts dl {margin:0;padding:1em;border-bottom:1px dotted #ccc;}
+div#facts dl.product-designation {border-bottom:none;}
+div#facts dt, div#facts dd {margin:0;padding:0;display:inline;}
+div#facts {border-left: 1em solid white;width:33%;margin-bottom:1em;float:right;padding-top:40px;}
+	
+.ug-wrapper div#facts h2 {border-bottom:#a4a400 1px solid;padding:1em;margin:0px;background:url(/oudigital/continuingstudentscss/images/ug-facts-bg.jpg) repeat-x left center;color:black;border-top:#fff 1px solid;font-weight:bold;font-size:1.2em;line-height:120%;}
+.pg-wrapper div#facts h2 {border-bottom:#a4a400 1px solid;padding:1em;margin:0px;background:url(/oudigital/continuingstudentscss/images/pg-facts-bg.jpg) repeat-x left center;color:black;border-top:#fff 1px solid;font-weight:bold;font-size:1.2em;line-height:120%;}
+		
+.ug-wrapper div.facts-overview 	{border:#c8c866 1px solid;background-color:#ededcc;}
+.pg-wrapper div.facts-overview 	{border:#99adc2 1px solid;background-color:#e4eaef;}
+
+
+/* **************************************************************/
+/* Study Explained  */
+/* **************************************************************/
+div#ou-region2 #study-explained dl {background-image: url(/includes/icons/16x16px/03info16.gif);background-repeat: no-repeat;background-position: 0 0.2em;padding-left: 25px;}
+div#ou-region2 #study-explained dl dt, div#ou-region2 #study-explained dl dt a {display: inline;margin: 0;padding: 0;border: none;font-weight: normal;}
+div#ou-region2 #study-explained dl dd {display: inline;margin: 0;padding: 0;}
+
+
+.hide {
+	display:none;
+}
+div#print-facts-box {
+    display: none;
+}
+
+
+
+
+/* ********************************************************************* */
+/* Route through diagrams										 */
+/* ********************************************************************* */
+.ug-wrapper div.route {border:1px solid #D1D1A5;padding:1em;margin:1em 0;}
+.ug-wrapper div.route td, body.ug div.route th {padding:0.5em 1em;}
+.ug-wrapper div.route td {background-image:none;border:1px solid #D1D1A5;border-collapse:collapse;}
+.ug-wrapper div.route table td.route-level {font-family:Arial, Helvetica, sans-serif;background-color:#525200;color:white;font-size:1.6em;width:5em;padding-left:0.5em;padding-right:0;}
+.ug-wrapper div.route td.route-level dd {font-size:1.8em;margin-top:-0.2em;}
+.ug-wrapper div.route td.route-sequence {background-color:#C8C866;color:#000;font-size:1.6em;text-align:center;width:2em;padding-left:0;padding-right:0;}
+.ug-wrapper div.route tr td.first {border-bottom:1px solid #FFF;}
+.ug-wrapper div#ou-region1 div.route td.route-course ul {margin-left:0;margin-top:0.5em;margin-bottom:0.5em;}
+.ug-wrapper div#ou-region1 div.route td.route-course ul li {background-image:none;padding-left:0;padding-right:1em;color:#525200;}
+.ug-wrapper div#ou-region1 p.route-next-step {background-image:url(/oudigital/continuingstudentscss/images/diagram-arrow-ug.gif);margin-left:0;}
+.ug-wrapper div#ou-region1 p.route-certificate,
+.ug-wrapper div#ou-region1 p.route-diploma, .ug-wrapper div#ou-region1 p.route-degree {background-color:#C8C866;margin-left:0;}
+
+.ug-wrapper div.route dl dt {font-weight: bold;}
+
+.ug-wrapper p.route-certificate span,
+.ug-wrapper p.route-diploma span,
+.ug-wrapper p.route-degree span{background-image:url(/oudigital/continuingstudentscss/images/award-icon-ug.gif);color:#333;}
+.ug-wrapper div#courses h3 {border-bottom:1px dotted #C8C866;background-color:#EDEDCC;margin-bottom:2em;}
+.ug-wrapper ul.route-options a:hover img {border:2px solid #C8C866;}
+.ug-wrapper ul.route-options li.current img {border:2px solid #C8C866;}
+
+
+body.route {}
+ul.route-options {float:left;clear:both;width:100%;height:auto;margin:0;padding:0;}
+ul.route-options li a,ul.route-options li a span {text-decoration:underline;}
+ul.route-options li a span {padding-left:2px;}
+ul.route-options li a:hover {background-color:transparent;}
+ul.route-options li a:hover span {background-color:#EEE;}
+ul.route-options a img {border:2px solid transparent;}
+div#ou-region1 ul.route-options li {list-style-type:none;margin:0 2em 1em 0;padding:0;float:left;width:140px;height:18em;background-image:none;}
+ul.route-options span.caption {display:block;margin:0 0 1em 0;font-size:0.9em;}
+ul.route-options li.current span {color:#000;background-color:#EEE;}
+div.route {border:1px solid #CCC;padding:1em;margin:1em 0;}
+div.route table {border-collapse:collapse;margin:0;}
+div.route dl, div.route dt, div.route dd {margin:0;padding:0;}
+div.route table td.route-level {background-color:#545442;color:white;font-size:1.4em;}
+td.route-sequence {background-color:#eee;font-size:1.2em;}
+div.route td {background-image:none;border:1px solid #CCC;border-collapse:collapse;}
+
+td.route-level {padding-left:0.5em;width:5em;padding-right:0px;text-align:center;}
+td.route-level dt {margin-bottom:1em;text-align:left;line-height:2em;}
+td.route-level dd {font-size:1.8em;text-align:left;}
+
+p.route-award {background-color:#ccc;padding:1em;text-align:center;margin:0;font-weight:bold;}
+p.route-degree {background-color:#333;}
+p.route-award span {background-image:url(/oudigital/continuingstudentscss/images/award-icon.gif);background-position:left center;background-repeat:no-repeat;padding:0.5em 0 0.5em 30px;}
+p.route-degree span {background-image:url(/oudigital/continuingstudentscss/images/qual-icon.gif);color:white;}
+p.route-next-step {text-indent:-5000em;overflow:hidden;background-image:url(/oudigital/continuingstudentscss/images/diagram-arrow.gif);background-position:center;background-repeat:no-repeat;width:100%;height:30px;margin:0;padding:0;}
+td.route-course ul {margin:0;padding:0;}
+td.route-course dd {margin:0;padding:0;}
+td.route-course ul li {margin:0;padding:0 1em 0 0;list-style:none;display:inline;}
+
+
+
+
+
+
+/* Postgrad routes	*/
+.pg-wrapper div.route {border: 1px solid #99ADC2;padding: 1em;margin: 1em 0;}
+div.route table {border-collapse: collapse;margin: 0;}
+.pg-wrapper div#ou-region1 p.route-next-step {background-image: url(/oudigital/continuingstudentscss/images/diagram-arrow-pg.gif);margin-left: 0;}
+p.route-next-step {text-indent: -5000em;overflow: hidden;background-image: url(/oudigital/continuingstudentscss/images/diagram-arrow-pg.gif);background-position: center;background-repeat: no-repeat;width: 100%;height: 30px;margin: 0;padding: 0;}
+p.route-award {background-color: #036;padding: 1em;text-align: center;margin: 0;font-weight: bold;}
+
+.pg-wrapper p.route-degree span {background-image: url(/oudigital/continuingstudentscss/images/qual-icon-pg.gif);}
+p.route-award span {background-position: left center;background-repeat: no-repeat;padding: 0.5em 0 0.5em 30px;}
+p.route-degree span {color: white;}
+.pg-wrapper p.route-degree .pg-link {background-color: transparent;color: #99ADC2;}
+
+.pg-wrapper div.route table td.route-level {background-color: #036;color: white;font-size: 1.6em;width: 5em;padding-left: 0.5em;padding-right: 0;font-family: Arial, Helvetica, sans-serif;}
+.pg-wrapper div.route td {background-image: none;border: 1px solid #99ADC2;border-collapse: collapse;}
+.pg-wrapper div.route td, .ug-wrapper div.route th {padding: 0.5em 1em;}
+.pg-wrapper div.route dl, div.route dt, div.route dd {margin: 0;padding: 0;}
+.pg-wrapper div.route dl dt {font-weight: bold;}
+.pg-wrapper div#ou-region1 div.route td.route-course ul {margin-left: 0;margin-top: 0.5em;margin-bottom: 0.5em;list-style-type: disc;}
+.pg-wrapper div#ou-region1 div.route td.route-course ul li {background-image: none;padding-left: 0;padding-right: 1em;color: #036;list-style-type: disc;padding: 0;margin-left: 1em;list-style-position: outside;}
+
+
+
+
+/* Student Reviews */
+.ug-wrapper div#student-reviews blockquote {background-image:url(/oudigital/continuingstudentscss/images/student-quote-ug.gif);}
+.ug-wrapper div#student-reviews p {background-image:url(/oudigital/continuingstudentscss/images/student-quote-ug-end.gif);padding-right:0;}
+
+
+
+/* Undergrad	*/
+div#ou-region1 ul.no-bullet li, div#ou-region1 ul li.no-bullet {list-style-type:none;margin-left:0;}
+a.pdf,span.pdf {background-image:url(/oudigital/continuingstudentscss/images/icon-pdf.gif);background-position:left center;background-repeat:no-repeat;padding-left:20px;padding-top:3px;padding-bottom:3px;}
+
+.custom_images {display:inline;vertical-align:baseline;}
+a.addthis_button {text-decoration:none;}
+a.addthis_button img {margin-right:0.5em;}
+
+
+/* Modules list styling	*/
+table.course-list th.course-title {padding-left:2.5em;width:60%;background:url(/oudigital/continuingstudentscss/images/course-list-bottom.jpg) #F4F4F4 repeat-x bottom left;line-height:2.5em;padding:0 0 0 1em;margin:0;}
+table.course-list th.course-points {width:10%;background:url(/oudigital/continuingstudentscss/images/course-list-bottom.jpg) #F4F4F4 repeat-x bottom left;line-height:2.5em;padding:0 0 0 1em;}
+table.course-list th.course-fee {width:20%;	background:url(/oudigital/continuingstudentscss/images/course-list-bottom.jpg) #F4F4F4 repeat-x bottom left;line-height:2.5em;padding:0 0 0 1em;}
+table.course-list dl, div#ou-region1 ul.toggle-all li {background-image:url(/oudigital/continuingstudentscss/images/arrow-down.gif);background-repeat:no-repeat;background-position:0 0.5em;padding-left:1.5em;margin:0;}
+table.course-list tr.highlight{background-color:#EDF9F9;}
+table.course-list dl a:focus {background-color:transparent;color:#003399;}
+table.course-list dl.contracted {background-image:url(/oudigital/continuingstudentscss/images/arrow-right.gif);/*background-color:#FFF;*/}
+div#ou-region1 ul.toggle-all li.contracted {background-image:url(/oudigital/continuingstudentscss/images/arrow-right.gif);background-position:0 0.3em;}
+table.course-list dt, table.course-list dd {margin:0;padding:0;}
+table.course-list dd {margin-top:1em;color:#000;}
+table.course-list dt {font-weight:normal;}
+div#courses h3 {font-weight:bold;padding:0.5em 1em;}
+.ug-wrapper div#courses h3.specialism, .pg-wrapper div#courses h3.specialism{margin-bottom:0.5em;}
+.ug-wrapper div#courses h3.specialism {background-color:#C8C866;}
+.pg-wrapper div#courses h3.specialism {background-color:#D4DAFF;}
+.pg-wrapper div#courses h3 {border-bottom:1px dotted #003366;background-color:#E4EAEF;}
+
+strong.new,strong.final {color:#000;background-color: #f4f4f4;border: 1px solid #ccc;padding: 0px 2px 0px 2px;vertical-align : middle;font-weight:normal;margin-left:5px;}
+
+
+/* New Table of contents styling	*/
+dl.ou-toc {margin-bottom:2em;}
+dl.ou-toc ul {margin-right:1em;}
+dl.ou-toc ul li 
+{
+	background-image:url(/oudigital/continuingstudentscss/images/icon-pipe.gif);
+	background-position:center left;	
+}
+
+dl.ou-toc ul li:first-child {
+	background-image:none;
+	margin-left:0px;
+	padding-left:0px;
+}
+dl.ou-toc ul li{display:inline;padding-right:5px;}
+dl.ou-toc ul li a{background-color:white;}
+
+
+/* Buttons	*/
+div#register table td#register-cell p{padding-top:0px;margin-top:0px;}
+
+div#register table td#register-cell a.button{float:left;margin-bottom:0px;}
+a.button:hover {background-color:#E0E0DB;}
+a.button {text-decoration:none;background-color:#F0F0EB;border-color:#000;border-style:solid;border-width:1px;color:black;display:block;margin:0 0 1em;padding:0.2em 0;text-align:center;width:10em;}
+
+
+div#ou-region1 ul#setbooks li {background-image:url(/oudigital/continuingstudentscss/images/045book_8Bit16x16.gif);background-position:left 0.2em;background-repeat:no-repeat;list-style-type:none;padding-left:25px;margin-left:0;}
+div#ou-region1 ul#setdvds li {background-image:url(/oudigital/continuingstudentscss/images/053dvdVideo_8Bit16x16.gif);background-position:left 0.2em;background-repeat:no-repeat;list-style-type:none;padding-left:25px;margin-left:0;}
+
+

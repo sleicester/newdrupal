@@ -1,0 +1,65 @@
+// =============================================================================
+// Notice
+// 
+// =============================================================================
+
+@notice-bg: @light-grey-blue;
+@original-padding-left: 15px;
+@icon-space: 120px + @original-padding-left; // +15px is to make up for int-container padding it's replacing
+
+.int-notice {
+
+	background-color: @notice-bg;
+	padding: 2em 0 2.5em 0;
+	margin: 1em 0 2em 0;
+	
+	&.int-notice-icon {
+	
+		.int-container {
+			background-repeat: no-repeat;
+			background-position: 15px center;
+			padding-left: @icon-space;
+		}
+		
+		&.int-notice-icon-pen {
+			.int-container {
+				// Note: This is a fallback for svg below
+				background-image: url('../img/icons/icon-pencil.png');
+			}
+		}
+		
+		@media (max-width: @screen-xs) {
+		
+			.int-container {
+				padding-left: @original-padding-left;
+			}
+			
+			&.int-notice-icon-pen {
+				.int-container {
+					background-image: none;
+				}
+			}
+			
+		}
+		
+	}
+}
+
+.svg {
+	.int-notice {
+		&.int-notice-icon {
+			&.int-notice-icon-pen {
+				.int-container {
+					background-image: url('../img/icons/icon-pencil.svg');
+				}
+			}
+			@media (max-width: @screen-xs) {
+				&.int-notice-icon-pen {
+					.int-container {
+						background-image: none;
+					}
+				}
+			}
+		}
+	}
+}

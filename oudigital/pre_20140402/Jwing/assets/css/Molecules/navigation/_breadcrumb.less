@@ -1,0 +1,23 @@
+// =============================================================================
+// Breadcrumb
+// 
+// =============================================================================
+
+.breadcrumb {
+	margin-top:1em;
+	dt { 
+		.int-hide;
+		@media (min-width: @screen-sm) {
+			position:static;
+			width:auto;
+			height:auto;
+			float:left;
+			margin-right:0.75em;
+		}
+	}
+	dd {
+		span, a {
+			white-space: nowrap;
+		}
+	}
+}

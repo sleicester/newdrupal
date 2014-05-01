@@ -1,0 +1,54 @@
+// =============================================================================
+// Typography
+// 
+// =============================================================================
+
+@bg-color: 				@white;
+@bg-color-alt: 		@mid-blue;
+@text-color: 			@black;
+@text-color-alt:  @white;
+@link-color: 			@purple;
+@link-color-alt: 	@gold;
+@error-color: 		@red;
+@valid-color: 		@green;
+@sml-text-size: 	0.875em;
+@lrg-text-size: 	1.25em;
+
+/* Base settings */
+body { 
+	color: @text-color; 
+	text-rendering: optimizeLegibility;
+	font-weight: 300;
+}
+
+p, ul, ol, dl {
+	margin-top: 0;
+	line-height: 1.4;
+}
+
+// Links
+a {
+	font-weight: 600;
+	color: @link-color;
+	text-decoration: none;
+	&:hover, &:focus {
+		text-decoration: underline;
+		outline:0;
+	}
+}
+
+.interaction {
+	background: @bg-color-alt;
+	color:@text-color-alt;
+	padding: 2px 0 2px 0;
+	p, ul, ol, dl, label, h1, h2, h3, h4, h5, h6 {
+		color: @text-color-alt;
+	}
+	a {
+		color: @link-color-alt;
+	}
+	hr {
+		border-color: #206dc3;
+		color: #206dc3;
+	}
+}
